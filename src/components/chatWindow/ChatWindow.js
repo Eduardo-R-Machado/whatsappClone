@@ -12,7 +12,14 @@ import SendIcon from '@material-ui/icons/Send'
 import MicIcon from '@material-ui/icons/Mic'
 
 export default () => {
+  
+  const closeItem = {
+    display: "none",
+  }
 
+  const openItem = {
+    display: "flex",
+  }
 
   const [emojiOpen, setEmojiOpen] = useState(false);
 
@@ -51,7 +58,7 @@ export default () => {
       </div>
 
       <div className="ChatWindow-emojiarea" 
-      style={{height: emojiOpen ? '200px' : '0px'}}
+      style={emojiOpen ? openItem : closeItem}
       >
         <EmojiPicker
           onEmojiClick={handleEmojiClick}
