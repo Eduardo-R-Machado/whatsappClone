@@ -7,6 +7,7 @@
   --fundo-verde: #D2DBDC;
   --font-geral: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Lucida Grande', 'Arial';
   --fundo-window: #EDEDED;
+  --verde-hover: #f5f5f5;
 }
 body{
   background-color:var(--fundo-verde) ;
@@ -46,10 +47,37 @@ header {
 
 .header-buttons{
   display: flex;
-
 }
 
+.header-btn{
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.search{
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 1rem;
+}
+
+.search--input{
+ background-color: #fff ;
+ height: 3.5rem;
+ border-radius: 1.3rem;
+ display: flex;
+ align-items:center;
+ padding: 0 10px;
+}
+
+.search--input input{
+   flex: 1;
+   outline: 0;
+   border: 0;
+   background-color: transparent;
+   margin-left: 0.10rem;
+}
 
 .content-area{
-
+  flex: 1;
+  
 }

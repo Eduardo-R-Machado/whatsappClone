@@ -1,0 +1,109 @@
+.ChatWindow{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.ChatWindow-header {
+ height: 5.3rem;
+ border-bottom: 0.3rem solid #ccc;
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+.ChatWindow-headerinfo{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.ChatWindow-avatar{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.ChatWindow-name{
+  font-size: 1rem;
+  color: #000;
+}
+
+.ChatWindow-headerbuttons{
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.ChatWindow-btn{
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.ChatWindow-body{
+  flex: 1;
+  overflow-y: auto;
+  background-color: #E5DDD5;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://cdnb.artstation.com/p/assets/images/images/024/538/889/large/pixel-jeff-rog-demo1.jpg?1582740646') ;  
+}
+
+.ChatWindow-footer{
+  height: 5rem;
+  display: flex;
+  align-items:center;
+}
+
+.ChatWindow-pre{
+  display: flex;
+  margin: 0 1rem;
+}
+
+.ChatWindow-inputarea{
+  flex: 1;
+}
+
+.ChatWindow-input{
+    width: 100%;
+    height: 2.5rem;
+    border: 0;
+    outline: 0;
+    border-radius: 4rem;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #4a4a4a;
+    padding-left: 0.8rem;
+}
+
+.ChatWindow-pos{
+  display: flex;
+  margin: 0 1rem;
+}
+
+.chatWindow-emojiarea{
+  height: 200px !important; 
+  overflow-y: hidden;
+  transition: all ease 0.3s !important;
+}
+
+
+aside.emoji-picker-react{
+  width: auto !important; 
+  background: none !important;
+  transition: all ease 0.3s !important;
+  height: 200px !important; 
+}
+
+.emoji-picker-react .emoji-group:before{
+  background: none !important; 
+}
